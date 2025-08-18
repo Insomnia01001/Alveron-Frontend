@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - Instant Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- tailwind -->
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <!-- tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Instant
+  * Template URL: https://bootstrapmade.com/newtemplate-bootstrap-website-template/
+  * Updated: Jun 11 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+
+<body class="index-page bg-[#121212] ">
+
+    <header id="header" class="header d-flex align-items-center fixed-top xl:px-[30px]">
+        <div class="container position-relative flex align-items-center items-center fl justify-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+                <h2 class="sitename sm:text-2xl md:text-2xl lg:text-3xl font-bold">ALVERON</h2>
+            </a>
+
+
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a data-uz="Bosh Sahifa" data-ru="Главная" data-en="Home" href="index.html#home" class="active"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Haqimizda" data-ru="О нас" data-en="About" href="index.html#about"></a>
+                    </li>
+                    <li id="category-links" class="dropdown">
+                        <a data-uz="Kategoriya" data-ru="Категория" data-en="Category" href="index.html#category"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <!-- Bu yerga JavaScript orqali <li><a>kategoriya</a></li> lar qo‘shiladi -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-uz="Qanday Ishlaymiz" data-ru="Как Мы Работаем" data-en="How We Work" href="index.html#howwework"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Hamkorlarimiz" data-ru="Партнеры" data-en="Patners" href="index.html#partners"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Savollar" data-ru="Вопросы" data-en="Questions" href="index.html#questions"></a>
+                    </li>
+
+
+                    <li>
+                        <a data-uz="Aloqa" data-ru="Контакт" data-en="Contact" href="contact.html"></a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <div class="flex items-center xl:mr-0 md:mr-2">
+                <a data-uz="Murojaat qilish" data-ru="Связаться" data-en="Connect" class="btn-getstarted" href="murojat.html">Murojat qilish</a>
+
+                <!-- TIL TANLASH -->
+                <div class="lang-switcher relative mx-3">
+                    <div class="btnlan lang-icon cursor-pointer text-white  font-bold px-[10px] py-1 bg-[#e59d02] rounded" id="langToggle">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div id="langMenu" class="lang-options absolute right-0 mt-2   bg-stone-800 rounded-lg shadow-lg z-50 transform transition-all duration-300 origin-top scale-y-0 opacity-0">
+                        <button onclick="changeLang('uz')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">UZ</button>
+                        <button onclick="changeLang('ru')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">RU</button>
+                        <button onclick="changeLang('en')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="home" class="hero section relative overflow-hidden bg-black/50">
+        <video id="hero-bg-video" autoplay muted loop class="absolute top-0 overflow-hidden  w-full h-full object-cover z-0"></video>
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50  z-0"></div>
+        <div class="container relative z-10">
+            <div class="container">
+                <div class="hero-wrapper">
+
+                    <div class="hero-main-content text-center">
+                        <h1 id="video-title" class="lg:text-5xl md:text-3xl text-xl font-black text-[#e59d02]" data-aos="zoom-in" data-aos-delay="200">
+                        </h1>
+                        <p id="video-description" class="lg:text-xl md:text-sm text-[12px] text-gray-300 py-10" data-aos="fade-up" data-aos-delay="300">
+                        </p>
+                        <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                            <a data-uz="Murojat qilish" data-ru="Связаться" data-en="Connect" href="murojat.html" class="rounded-full sm:py-3 sm:px-10 py-2 px-6 text-white hover:bg-[#cf5f02] bg-[#da7c09] primary">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main class="main xl:px-[30px]">
+
+
+
+        <!-- About Section -->
+        <div id="about" class="section bg-transparent absolute"></div>
+
+        <section class="about section bg-transparent  ">
+            <div class="container xl:px-[90px]  section-title mt-5" data-aos="fade-up">
+                <h2 data-uz="Biz Haqimizda" data-ru="О нас" data-en="About us" class="translatable">DEFAULT</h2>
+
+            </div>
+            <div class="row align-items-center  justify-content-between g-lg-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <img src="assets/img/pexels-eartharchive-13227041.jpg" class="img-fluid rounded xl:h-[700px]  xl:ml-[100px]" alt="About Us Image">
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="content">
+
+                        <p data-uz="Biz — Xitoydan yangi va ishlatilgan maxsus texnikani yetkazib berishga ixtisoslashgan professionallar jamoasimiz. Bizning maqsadimiz — har bir mijoz uchun ishonchli va sinovdan o‘tgan texnikalarga qulay, foydali va xavfsiz kirishni ta’minlashdir.
+
+Biz ishlab chiqaruvchi zavodlar va ishonchli yetkazib beruvchilar bilan bevosita hamkorlik qilamiz, bu esa texnikani ortiqcha narx va vositachilarsiz taklif qilish imkonini beradi. Bizning assortimentimizda: avtobeton nasoslari (statsionar va chiziqli beton nasoslar), ekskavatorlar, yuk ko‘taruvchilar, avtokranlar, yo‘l texnikasi va boshqa ko‘plab texnikalar mavjud.
+
+Har bir texnika jo‘natilishdan avval sinchkovlik bilan tekshiriladi: texnik ko‘rikdan o‘tkaziladi, foto va video hisobotlar tayyorlanadi, hujjatlar tekshiriladi. Biz xarid jarayonini model tanlashdan boshlab, yetkazib berish va ishga tushirishgacha bo‘lgan barcha bosqichlarda kuzatib boramiz.
+
+🔧 Biz ishlatilgan texnikaga kafolat beramiz
+Bu shuni anglatadiki, siz oddiy “ishlatilgan” emas, balki texnik holati hujjatlar bilan tasdiqlangan, to‘liq tekshiruvdan o‘tgan va ishonchli ishlash kafolatiga ega uskunani olasiz." data-ru="Мы — команда профессионалов, специализирующаяся на поставках новой и подержанной спецтехники из Китая. Наша цель — сделать доступ к надежной и проверенной технике простым, выгодным и безопасным для каждого клиента.
+
+Работаем напрямую с заводами-изготовителями и проверенными поставщиками, что позволяет нам предлагать технику без лишних наценок и посредников. В нашем ассортименте — Автобетононасосы (стационарные и линейные бетононасосы), экскаваторы, погрузчики, автокраны, дорожная техника и многое другое.
+
+Каждая единица техники проходит тщательную проверку перед отправкой: технический осмотр, фото- и видеоотчет, проверка документов. Мы сопровождаем сделку на всех этапах — от подбора модели до доставки и запуска оборудования.
+
+🔧 Мы даем гарантию на подержанную технику
+Это означает, что вы получаете не просто “б/у” машину, а полностью проверенное и исправное оборудование с документально подтвержденным техническим состоянием и гарантией надежной работы." data-en="We are a team of professionals specializing in the supply of new and used special equipment from China. Our goal is to make access to reliable and verified machinery simple, cost-effective, and safe for every client.
+
+We work directly with manufacturers and trusted suppliers, allowing us to offer equipment without extra markups or intermediaries. Our range includes truck-mounted concrete pumps (stationary and line pumps), excavators, loaders, truck cranes, road construction equipment, and much more.
+
+Each unit undergoes thorough inspection before shipment: technical checks, photo and video reports, and documentation verification. We support you throughout the entire process — from selecting the right model to delivery and commissioning.
+
+🔧 We provide a warranty on used equipment
+This means you receive not just a used  machine, but fully inspected and operational equipment with documented technical condition and guaranteed performance. "></p>
+
+                        <div class="features-list mt-5 " data-aos="fade-up " data-aos-delay="400 ">
+                            <div class="row g-4 ">
+
+                                <div class="col-md-6 ">
+                                    <div class="feature-item ">
+                                        <i class="bi bi-people "></i>
+                                        <h5 data-uz="Ishonchli hamkorlik" data-ru="Надёжное партнёрство" data-en="Trusted Partnership">Community</h5>
+                                        <p data-uz="Har bir kelishuvda sifat, halollik va o‘z vaqtida bajarish tamoyillariga amal qilamiz. Sizning muvaffaqiyatingiz — bizning ustuvor vazifamiz." data-ru="В каждом соглашении мы придерживаемся принципов качества, честности и своевременного выполнения. Ваш успех — наш приоритет."
+                                            data-en="In every agreement, we adhere to the principles of quality, integrity, and timely delivery. Your success is our priority.">Suspendisse potenti. Integer ut fringilla mi.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="feature-item ">
+                                        <i class="bi bi-graph-up-arrow "></i>
+                                        <h5 data-uz="Kafolatli va sifatli ish." data-ru="Гарантированная и качественная работа." data-en="Guaranteed and high-quality work.">Growth</h5>
+                                        <p data-uz="Har bir loyihada kafolatlangan sifat va ishonchlilik. Biz natijaga erishish uchun barcha jarayonlarda mas’uliyat bilan ishlaymiz." data-ru="Гарантированное качество и надёжность в каждом проекте. Мы работаем ответственно на всех этапах, чтобы достичь идеального результата."
+                                            data-en="Guaranteed quality and reliability in every project. We work responsibly at every stage to achieve the perfect result.">Maecenas ac nibh magna. Aenean fringilla lobortis ex.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+        <!-- Category section -->
+        <section id="category" class="max-w-6xl mx-auto px-4 mt-10 bg-transparent">
+            <div class="container xl:px-[90px] section-title mt-5" data-aos="fade-up">
+                <h2 data-uz="Kategoriya" data-ru="Категория" data-en="Category" class="translatable">DEFAULT</h2>
+
+            </div>
+            <div id="category-box" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- JS orqali kategoriya kartalari shu yerga tushadi -->
+
+            </div>
+        </section>
+        <!-- Category section -->
+
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+
+
+        <!-- How We Work Section -->
+        <section id="howwework" class="how-we-work section bg-transparent ">
+
+            <!-- Section Title -->
+            <div class="container section-title " data-aos="fade-up ">
+                <h2 data-uz="Biz qanday ishlaymiz" data-ru="Как мы работаем" data-en="How We Work">
+                </h2>
+
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container " data-aos="fade-up " data-aos-delay="100 ">
+
+                <div class="steps-wrapper ">
+
+                    <div class="step-item " data-aos="fade-right " data-aos-delay="200 ">
+                        <div class="step-content ">
+                            <div class="step-icon ">
+                                <i class="fa-solid text-5xl fa-message py-[10px] px-[20px] text-[#e59d02] "></i>
+                            </div>
+                            <div class="step-info ">
+                                <span class="step-number" data-uz="1-qadam" data-ru="Шаг - 1" data-en="Step - 1"></span>
+
+                                <h3 data-uz="Mijozdan ariza " data-ru="Заявка от клиента " data-en="Client 's request"></h3>
+                                <p data-uz="Siz saytda ariza qoldirasiz yoki biz bilan sizga qulay bo‘lgan istalgan usulda bog‘lanasiz. Biz texnik talablar, byudjet va afzalliklaringizni aniqlashtiramiz." data-ru="Вы оставляете заявку на сайте или связываетесь с нами любым удобным способом. Мы уточняем технические требования, бюджет и предпочтения."
+                                    data-en="You submit a request on the website or contact us in any convenient way. We clarify the technical requirements, budget, and your preferences."></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Step Item -->
+
+                    <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fa-regular fa-rectangle-list  text-5xl fa-message py-[10px] px-[20px] text-[#e59d02]"></i>
+
+                            </div>
+                            <div class="step-info">
+                                <span class="step-number" data-uz="2-qadam" data-ru="Шаг - 2" data-en="Step - 2"></span>
+
+                                <h3 data-uz="Texnikani tanlash" data-ru="Подбор техники" data-en="Equipment selection"></h3>
+                                <p data-uz="Mutaxassislarimiz sizning vazifalaringizni inobatga olgan holda, yangi hamda ishlatilgan maxsus texnikaning eng optimal variantlarini tanlab berishadi. Suratlar, texnik xususiyatlar va narxlarni taqdim etamiz." data-ru=" Наши специалисты подбирают оптимальные варианты спецтехники — как новой, так и подержанной — с учетом ваших задач. Предоставляем фото, характеристики и цены."
+                                    data-en="Our specialists select the most suitable options of special equipment — both new and used — based on your needs. We provide photos, specifications, and prices.">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Step Item -->
+
+                    <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-list-check text-5xl fa-message py-[10px] px-[20px] text-[#e59d02]"></i>
+
+                            </div>
+                            <div class="step-info">
+                                <span class="step-number" data-uz="3-qadam" data-ru="Шаг - 3" data-en="Step - 3"></span>
+
+                                <h3 data-uz="Tekshirish va inspeksiya" data-ru="Проверка и инспекция" data-en="Inspection and verification"></h3>
+                                <p data-uz="Texnika joyida to‘liq tekshiruvdan o‘tkaziladi: texnik holati, huquqiy tozaligi va ko‘rsatilgan parametrlarga muvofiqligi aniqlanadi." data-ru=" Техника проходит полную проверку на месте: техническое состояние, юридическая чистота, соответствие заявленным параметрам."
+                                    data-en="The equipment undergoes a full on-site inspection: technical condition, legal clearance, and compliance with the stated specifications.">Executing the planned strategies with precision and agility. Our team implements solutions while maintaining constant communication and progress updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Step Item -->
+
+                    <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-handshake text-5xl fa-message py-[10px] px-[20px] text-[#e59d02]"></i>
+
+                            </div>
+                            <div class="step-info">
+                                <span class="step-number" data-uz="4-qadam" data-ru="Шаг - 4" data-en="Step - 4"></span>
+
+                                <h3 data-uz="Shartnoma tuzish" data-ru="Заключение договора" data-en="Contract signing"></h3>
+                                <p data-uz="Yetkazib berish shartnomasini rasmiylashtiramiz, oldindan to‘lovni amalga oshiramiz va eksport uchun hujjatlarni tayyorlaymiz." data-ru="Оформляем договор поставки, вносим предоплату и готовим документы для экспорта." data-en="We draw up a supply contract, make a prepayment, and prepare the documents for export."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-earth-asia text-5xl  py-[10px] px-[20px] text-[#e59d02]"></i>
+
+                            </div>
+                            <div class="step-info">
+                                <span class="step-number" data-uz="5-qadam" data-ru="Шаг - 5" data-en="Step - 5"></span>
+
+                                <h3 data-uz="O‘zbekistonga / MDHga yetkazib berish" data-ru="Доставка в Узбекистан / СНГ" data-en="Delivery to Uzbekistan / CIS countries"></h3>
+                                <p data-uz="Logistikani tashkil qilamiz: temir yo‘l yoki avtotransport orqali yetkazib beramiz. Bojxona hujjatlarini o‘zimiz rasmiylashtiramiz (to‘liq xizmat)." data-ru="Организуем логистику: доставка железной дорогой или автотранспортом. Оформляем таможенные документы сами (под ключ)."
+                                    data-en="We organize logistics: delivery by rail or road transport. We handle all customs documentation ourselves (turnkey service)."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-circle-check text-5xl  py-[10px] px-[20px] text-[#e59d02]"></i>
+
+                            </div>
+                            <div class="step-info">
+                                <span class="step-number" data-uz="6-qadam" data-ru="Шаг - 6" data-en="Step - 6"></span>
+
+                                <h3 data-uz="Texnikani mijozga topshirish" data-ru="Передача техники клиенту" data-en=" Transfer of equipment to the client">Launch &amp; Support</h3>
+                                <p data-uz="Yetkazib berilgandan so‘ng texnika sizga barcha hujjatlari bilan topshiriladi, zarurat bo‘lsa — yo‘riqnoma beriladi yoki ishga tushirish amalga oshiriladi." data-ru="После доставки техника передается вам с полным пакетом документов и при необходимости — с инструктажем или запуском в работу."
+                                    data-en="After delivery, the equipment is handed over to you with a full set of documents and, if necessary, with a briefing or commissioning."></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Step Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /How We Work Section -->
+
+
+
+
+        <!-- Clients Section -->
+        <div id="partners" class="absolute section sm:mt-[-100px]"></div>
+        <section class="clients section mt-[20px] mb-[80px] bg-transparent">
+
+            <div class="container xl:px-[90px] section-title mt-14 " data-aos="fade-up">
+                <h2 data-uz="HAMKORLAR" data-ru="ПАРТНЕРЫ" data-en="PARTNERS"></h2>
+            </div>
+            <div class="border-t-2 border-yellow-500  bg-white"></div>
+            <!-- Partner cards -->
+            <div id="partners-container" class="flex flex-wrap justify-center gap-x-[0px] gap-y-2 mt-4 " data-aos="fade-left" data-aos-delay="200">
+                <!-- JS orqali cardlar chiqadi -->
+            </div>
+            <div class="border-b-2 border-yellow-500  bg-white"></div>
+
+        </section>
+        <!-- /Clients Section -->
+
+
+
+
+
+
+        <!-- Faq Section -->
+        <!-- Faq Section -->
+        <section id="questions" class="faq section bg-transparent">
+            <div class="container xl:px-[90px] section-title" data-aos="fade-up">
+                <h2 data-uz="Savollar" data-ru="Вопросы" data-en="Questions"></h2>
+                <div data-uz="Tez-tez so‘raladigan savollar" data-ru="Часто Задаваемые Вопросы" data-en="Frequently Asked Questions (FAQ)"></div>
+            </div>
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-lg-8">
+                        <div class="faq-list">
+                            <div class="faq-item faq-active">
+                                <h3 data-uz="Siz qanday turdagi maxsus texnikalarni yetkazib berasiz?" data-ru="Какие виды спецтехники вы поставляете?" data-en="What types of special equipment do you supply?"></h3>
+                                <div class="faq-content">
+                                    <p data-uz="Biz avtobeton nasoslari, statsionar beton nasoslari (beton yotqizish texnikasining barcha turlari), minorali kranlar, ekskavatorlar, yuk ko‘taruvchilar, avtokranlar, buldozerlar, yo‘l tekislagichlar, yo‘l qurilish texnikasi va boshqa qurilish uskunalarini — yangi hamda ishlatilgan holatda — yetkazib beramiz."
+                                        data-ru="Мы поставляем Автобетононасосы, стационарные бетононасосы (все виды бетоноукладочных техник), башенные краны, экскаваторы, погрузчики, автокраны, бульдозеры, катки, дорожную технику и другое строительное оборудование — как новое, так и с пробегом.
+" data-en="We supply truck-mounted concrete pumps, stationary concrete pumps (all types of concrete placement equipment), tower cranes, excavators, loaders, truck cranes, bulldozers, rollers, road construction machinery, and other construction equipment — both new and used.">
+
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+                            <!-- End FAQ Item-->
+
+                            <div class="faq-item">
+                                <h3 data-uz="Siz faqat Xitoy bilan ishlaysizmi?" data-ru="Вы работаете только с Китаем?" data-en="Do you work only with China?"></h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ha, biz aynan Xitoydan maxsus texnika yetkazib berishga ixtisoslashganmiz, chunki bu g‘arbiy brendlar bilan solishtirganda narx va sifatning optimal muvozanatini ta’minlash imkonini beradi." data-ru="Да, мы специализируемся на поставках спецтехники именно из Китая, так как это позволяет обеспечить оптимальное соотношение цены и качества по сравнению с западными брендами."
+                                        data-en="Yes, we specialize in supplying special equipment specifically from China, as this allows us to offer the best balance of price and quality compared to Western brands.">
+
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+                            <!-- End FAQ Item-->
+
+                            <div class="faq-item">
+                                <h3 data-uz="Ishlatilgan texnikaga kafolat bormi?" data-ru="Есть ли гарантия на подержанную технику?" data-en="Is there a warranty on used equipment?"></h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ha, biz ishlatilgan texnikaga ham kafolat beramiz. Har bir texnika jo‘natilishdan oldin to‘liq texnik tekshiruvdan o‘tkaziladi. Kafolat muddati va shartlari individual ravishda belgilanadi.
+Yangi texnikaga esa kafolat avtomatik tarzda beriladi." data-ru="Да, мы предоставляем гарантию на подержанную технику. Перед отгрузкой каждая машина проходит полную техническую проверку. Срок и условия гарантии уточняются индивидуально.
+Гарантия на новую технику даётся автоматически." data-en="Yes, we provide a warranty on used equipment. Each machine undergoes a full technical inspection before shipment. The warranty period and conditions are specified individually.
+A warranty for new equipment is provided automatically.">
+
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+                            <!-- End FAQ Item-->
+
+                            <div class="faq-item">
+                                <h3 data-uz="Texnika qanday yetkazib beriladi?" data-ru="Как происходит доставка техники?" data-en="How is the equipment delivered?"></h3>
+                                <div class="faq-content">
+                                    <p data-uz="Biz yetkazib berishni kalit topshirish usulida tashkil qilamiz: mintaqa va texnika turiga qarab temir yo‘l yoki avtotransport orqali. Shuningdek, bojxona rasmiylashtiruvi bilan bog‘liq barcha mas’uliyatni o‘z zim­mamizga olamiz.
+                                        " data-ru="Мы организуем доставку под ключ : железной дорогой или автотранспортом — в зависимости от региона и типа техники. Также берём на себя все вопросы с таможенным оформлением. " data-en="We organize turnkey delivery: by rail or road transport, depending on the region and type of equipment. We also take care of all customs clearance procedures.">
+
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle "></i>
+                            </div>
+                            <!-- End FAQ Item-->
+
+                            <div class="faq-item ">
+                                <h3 data-uz="Ma’lum bir buyurtmaga mos texnikani buyurtma qilish mumkinmi?" data-ru="Можно ли заказать технику под конкретный запрос?" data-en="Is it possible to order equipment based on a specific request?"></h3>
+                                <div class="faq-content ">
+                                    <p data-uz="Ha, albatta. Biz texnikani mijozning texnik talablariga, byudjetiga va istaklariga qarab tanlab beramiz. Sizga suratlar, videolar va texnik xususiyatlar bilan tanlov variantlarini yuboramiz." data-ru="Да. Мы подбираем технику по техническим параметрам, бюджету и пожеланиям клиента. Отправим вам подборку с фото, видео и характеристиками."
+                                        data-en="Yes, absolutely. We select equipment based on the client's technical requirements, budget, and preferences. We will send you a selection with photos, videos, and specifications.">
+
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle "></i>
+                            </div>
+                            <!-- End FAQ Item-->
+                            <!-- 6 -->
+                            <div class="faq-item">
+                                <h3 data-uz="Yetkazib berish qancha vaqt oladi?" data-ru="Сколько времени занимает доставка?" data-en="How long does delivery take?">
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-uz="Oldindan to‘lovdan so‘ng o‘rtacha yetkazib berish muddati — 20 dan 45 ish kunigacha, mintaqa va logistika holatiga qarab." data-ru="Средний срок доставки от момента предоплаты — от 20 до 45 рабочих дней, в зависимости от региона и логистики."
+                                        data-en="The average delivery time after prepayment is 20 to 45 working days, depending on the region and logistics.">
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+
+                            <!-- 7 -->
+                            <div class="faq-item">
+                                <h3 data-uz="Oldindan to‘lov qilish kerakmi?" data-ru="Нужно ли вносить предоплату?" data-en="Is a prepayment required?">
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ha, ishni boshlash uchun mijoz bilan kelishilgan holda 30-50% oldindan to‘lov amalga oshiriladi. Yakuniy hisob-kitob texnika jo‘natishga tayyor bo‘lgandan keyin amalga oshiriladi." data-ru="Да, для начала работы вносится предоплата от 30-50% (оговаривается с клиентом). Окончательный расчет осуществляется после подтверждения готовности техники к отправке."
+                                        data-en="Yes, to start the process, a prepayment of 30–50% is made (negotiated with the client). The final payment is made once the equipment is ready for shipment.">
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+
+                            <!-- 8 -->
+                            <div class="faq-item">
+                                <h3 data-uz="Sotib olishdan oldin texnikani ko‘rish mumkinmi?" data-ru="Можно ли осмотреть технику до покупки?" data-en="Can the equipment be inspected before purchase?">
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ha, biz foto va video hisobotlar taqdim etamiz, shuningdek onlayn ko‘rikni ham tashkil qilishimiz mumkin. Istakka ko‘ra mutaxassislarimiz joyiga borib ko‘rikdan o‘tkazishi mumkin." data-ru="Да, мы предоставляем фото- и видеоотчёты, а также можем организовать онлайн-осмотр. При желании возможен выездной осмотр нашими специалистами."
+                                        data-en="Yes, we provide photo and video reports, and we can also arrange an online inspection. If needed, our specialists can perform an on-site inspection.">
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+
+                            <!-- 9 -->
+                            <div class="faq-item">
+                                <h3 data-uz="Texnikani ro‘yxatdan o‘tkazishda yordam berasizmi?" data-ru="Помогаете ли с регистрацией техники?" data-en="Do you assist with equipment registration?">
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ha, bojxona bilan bog‘liq barcha ishlarni biz o‘zimiz bajarishga mas’ulmiz. Bizda katta tajribaga ega deklarantlar ishlaydi." data-ru="Да, все таможенные дела берём на себя. Так как у нас работают опытные со стажем декларанты." data-en="Yes, we handle all customs-related processes. Our team includes experienced and qualified customs declarants.">
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+
+                            <!-- 10 -->
+                            <div class="faq-item">
+                                <h3 data-uz="Ishlatilgan statsionar beton nasosga qanday kafolat beriladi?" data-ru="Какую гарантию даёте на б/у стационарный бетононасос?" data-en="What warranty do you offer on used stationary concrete pumps?">
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-uz="Ishlatilgan statsionar beton nasoslarga biz 3 oylik kafolat beramiz — dvigatel va gidravlik nasosga. Chunki bu texnikaning eng qimmat bo‘lgan qismlaridir." data-ru="На б/у стационарные бетононасосы мы даём 3 месяца гарантии на двигатель и гидравлический насос — это одни из самых дорогих узлов техники."
+                                        data-en="We provide a 3-month warranty on the engine and hydraulic pump of used stationary concrete pumps, as these are the most valuable parts of the equipment.">
+                                    </p>
+                                </div>
+                                <i class="bi bi-plus faq-toggle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ">
+                        <div class="faq-card ">
+                            <i class="bi bi-chat-dots-fill "></i>
+                            <h3 data-uz="Alveron" data-ru="Алверон" data-en="Alveron"></h3>
+                            <p data-uz="Biz bilan bog‘laning — biz siz bilan aloqaga chiqamiz." data-ru="Свяжитесь с нами — и мы вам перезвоним." data-en="Contact us — and we will get back to you.">
+                            </p>
+
+                            </p>
+                            <a data-uz="Murojat qilish" data-ru="Связаться" data-en="Connect" href="murojat.html " class="btn btn-primary "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Faq Section -->
+
+        <!-- /Faq Section -->
+
+
+
+    </main>
+
+
+    <!-- Scroll Top -->
+    <a href="# " id="scroll-top " class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js "></script>
+    <script src="assets/vendor/typed.js/typed.umd.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+
+    <!-- ///tailwind/// -->
+    <script src="https://cdn.tailwindcss.com "></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries "></script>
+    </head>
+    <!-- ///tailwind/// -->
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>

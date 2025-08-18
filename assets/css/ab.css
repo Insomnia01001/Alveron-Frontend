@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.about .about-book-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.about .about-book-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about .about-book-img .book-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: color-mix(in srgb, var(--surface-color), transparent 10%);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.about .about-book-img .book-details .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about .about-book-img .book-details .detail-item i {
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+.about .about-book-img .book-details .detail-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .about-book-img .book-details .detail-item div span {
+    font-size: 12px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-bottom: 2px;
+}
+
+.about .about-book-img .book-details .detail-item div p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.about .about-book-img:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .about .about-book-img {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+.about .about-book-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+}
+
+.about .about-book-content .book-category {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.about .about-book-content .book-category span {
+    font-size: 14px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.about .about-book-content .book-category span i {
+    font-size: 16px;
+}
+
+.about .about-book-content p {
+    color: var(--default-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about .about-book-content .highlights {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about .about-book-content .highlights h3 {
+    font-size: 20px;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.about .about-book-content .highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about .about-book-content .highlights ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.about .about-book-content .highlights ul li i {
+    color: var(--accent-color);
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.about .about-book-content .highlights ul li span {
+    color: var(--default-color);
+    line-height: 1.5;
+}
+
+.about .about-book-content .about-book-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.about .about-book-content .about-book-cta i {
+    transition: transform 0.3s ease;
+}
+
+.about .about-book-content .about-book-cta:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    transform: translateY(-3px);
+}
+
+.about .about-book-content .about-book-cta:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    .about .about-book-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about-book-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .about .about-book-content .book-category {
+        justify-content: center;
+    }
+    .about .about-book-content .highlights ul li {
+        text-align: left;
+    }
+}
