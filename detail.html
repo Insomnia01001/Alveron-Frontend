@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Index - Instant Bootstrap Template</title>
@@ -10,19 +11,10 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Vendor CSS -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
 
     <!-- Tailwind CSS -->
     <!-- <link href="./output.css" rel="stylesheet" /> -->
@@ -38,208 +30,131 @@
 
     <meta name="csrf-token" content="{{ csrf_token }}" />
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+</head>
 
-  <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex align-items-center fixed-top xl:px-[30px]"
-    >
-      <div
-        class="container position-relative flex align-items-center items-center fl justify-between"
-      >
-        <a
-          href="index.html"
-          class="logo d-flex align-items-center me-auto me-xl-0"
-        >
-          <h2 class="sitename sm:text-2xl md:text-2xl lg:text-3xl font-bold">
-            ALVERON
-          </h2>
-        </a>
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top xl:px-[30px]">
+        <div class="container position-relative flex align-items-center items-center fl justify-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h2 class="sitename sm:text-2xl md:text-2xl lg:text-3xl font-bold">
+                    ALVERON
+                </h2>
+            </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li>
-              <a
-                data-uz="Bosh Sahifa"
-                data-ru="Главная"
-                data-en="Home"
-                href="index.html#home"
-                class="active"
-              ></a>
-            </li>
-            <li>
-              <a
-                data-uz="Haqimizda"
-                data-ru="О нас"
-                data-en="About"
-                href="index.html#about"
-              ></a>
-            </li>
-            <li id="category-links" class="dropdown">
-              <a
-                data-uz="Kategoriya"
-                data-ru="Категория"
-                data-en="Category"
-                href="index.html#category"
-                ><span>Dropdown</span>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a data-uz="Bosh Sahifa" data-ru="Главная" data-en="Home" href="index.html#home" class="active"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Haqimizda" data-ru="О нас" data-en="About" href="index.html#about"></a>
+                    </li>
+                    <li id="category-links" class="dropdown">
+                        <a data-uz="Kategoriya" data-ru="Категория" data-en="Category" href="index.html#category"><span>Dropdown</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
-              <ul>
-                <!-- Bu yerga JavaScript orqali <li><a>kategoriya</a></li> lar qo‘shiladi -->
-              </ul>
-            </li>
-            <li>
-              <a
-                data-uz="Qanday Ishlaymiz"
-                data-ru="Как Мы Работаем"
-                data-en="How We Work"
-                href="index.html#howwework"
-              ></a>
-            </li>
-            <li>
-              <a
-                data-uz="Hamkorlarimiz"
-                data-ru="Партнеры"
-                data-en="Patners"
-                href="index.html#partners"
-              ></a>
-            </li>
-            <li>
-              <a
-                data-uz="Savollar"
-                data-ru="Вопросы"
-                data-en="Questions"
-                href="index.html#questions"
-              ></a>
-            </li>
+                        <ul>
+                            <!-- Bu yerga JavaScript orqali <li><a>kategoriya</a></li> lar qo‘shiladi -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-uz="Qanday Ishlaymiz" data-ru="Как Мы Работаем" data-en="How We Work" href="index.html#howwework"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Hamkorlarimiz" data-ru="Партнеры" data-en="Patners" href="index.html#partners"></a>
+                    </li>
+                    <li>
+                        <a data-uz="Savollar" data-ru="Вопросы" data-en="Questions" href="index.html#questions"></a>
+                    </li>
 
-            <li>
-              <a
-                data-uz="Aloqa"
-                data-ru="Контакт"
-                data-en="Contact"
-                href="contact.html"
-              ></a>
-            </li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        <div class="flex items-center xl:mr-0 md:mr-2">
-          <a
-            data-uz="Murojaat qilish"
-            data-ru="Связаться"
-            data-en="Connect"
-            class="btn-getstarted"
-            href="murojat.html"
-            >Murojat qilish</a
-          >
+                    <li>
+                        <a data-uz="Aloqa" data-ru="Контакт" data-en="Contact" href="contact.html"></a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <div class="flex items-center xl:mr-0 md:mr-2">
+                <a data-uz="Murojaat qilish" data-ru="Связаться" data-en="Connect" class="btn-getstarted" href="murojat.html"></a>
 
-          <!-- TIL TANLASH -->
-          <div class="lang-switcher relative mx-3">
-            <div
-              class="btnlan lang-icon cursor-pointer text-white font-bold px-[10px] py-1 bg-[#e59d02] rounded"
-              id="langToggle"
-            >
-              <i class="fa-solid fa-earth-americas"></i>
-            </div>
-            <div
-              id="langMenu"
-              class="lang-options absolute right-0 mt-2 bg-stone-800 rounded-lg shadow-lg z-50 transform transition-all duration-300 origin-top scale-y-0 opacity-0"
-            >
-              <button
-                onclick="changeLang('uz')"
-                class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg"
-              >
+                <!-- TIL TANLASH -->
+                <div class="lang-switcher relative mx-3">
+                    <div class="btnlan lang-icon cursor-pointer text-white font-bold px-[10px] py-1 bg-[#e59d02] rounded" id="langToggle">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div id="langMenu" class="lang-options absolute right-0 mt-2 bg-stone-800 rounded-lg shadow-lg z-50 transform transition-all duration-300 origin-top scale-y-0 opacity-0">
+                        <button onclick="changeLang('uz')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">
                 UZ
               </button>
-              <button
-                onclick="changeLang('ru')"
-                class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg"
-              >
+                        <button onclick="changeLang('ru')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">
                 RU
               </button>
-              <button
-                onclick="changeLang('en')"
-                class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg"
-              >
+                        <button onclick="changeLang('en')" class="block w-full lg:px-4 px-2 py-2 text-left text-white hover:bg-gray-800 hover:rounded-lg">
                 EN
               </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </header>
 
     <main class="main xl:px-[30px]">
-      <div class="py-6">
-        <div
-          class="container xl:px-[90px] section-title mt-[100px]"
-          data-aos="fade-up"
-        >
-          <h2
-            data-uz="Texnika haqida ma'lumot"
-            data-ru="Информация о технике"
-            data-en="Technical Information"
-            class="translatable"
-          ></h2>
+        <div class="py-6">
+            <div class="container xl:px-[90px] section-title mt-[100px]" data-aos="fade-up">
+                <h2 data-uz="Texnika haqida ma'lumot" data-ru="Информация о технике" data-en="Technical Information" class="translatable"></h2>
+            </div>
+            <!-- Product Content -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+                <div id="product-detail" class="flex flex-col md:flex-row -mx-4">
+                    <!-- JS dynamically injects content here -->
+                </div>
+            </div>
         </div>
-        <!-- Product Content -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
-          <div id="product-detail" class="flex flex-col md:flex-row -mx-4">
-            <!-- JS dynamically injects content here -->
-          </div>
-        </div>
-      </div>
 
-      <script src="https://unpkg.com/alpinejs" defer></script>
-      <!-- Alpine.js-ni qo'shish -->
+        <script src="https://unpkg.com/alpinejs" defer></script>
+        <!-- Alpine.js-ni qo'shish -->
 
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const params = new URLSearchParams(window.location.search);
-          let id = params.get("id");
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                        const params = new URLSearchParams(window.location.search);
+                        let id = params.get("id");
 
-          let currentLang =
-            params.get("lang") || localStorage.getItem("lang") || "uz";
-          localStorage.setItem("lang", currentLang);
+                        let currentLang =
+                            params.get("lang") || localStorage.getItem("lang") || "uz";
+                        localStorage.setItem("lang", currentLang);
 
-          let fetchedData = null;
+                        let fetchedData = null;
 
-          // Statik matnlarni tilga moslash
-          function applyLanguage() {
-            document.querySelectorAll("[data-uz]").forEach((el) => {
-              const text = el.getAttribute(`data-${currentLang}`);
-              if (text) el.textContent = text;
-            });
-          }
+                        // Statik matnlarni tilga moslash
+                        function applyLanguage() {
+                            document.querySelectorAll("[data-uz]").forEach((el) => {
+                                const text = el.getAttribute(`data-${currentLang}`);
+                                if (text) el.textContent = text;
+                            });
+                        }
 
-          // Har qanday maydondan tilga mos qiymat olish
-          function getLangValue(obj, field) {
-            if (!obj) return "";
-            if (obj[`${field}_${currentLang}`] != null) {
-              return obj[`${field}_${currentLang}`];
-            }
-            return obj[field] || "";
-          }
+                        // Har qanday maydondan tilga mos qiymat olish
+                        function getLangValue(obj, field) {
+                            if (!obj) return "";
+                            if (obj[`${field}_${currentLang}`] != null) {
+                                return obj[`${field}_${currentLang}`];
+                            }
+                            return obj[field] || "";
+                        }
 
-          // Asosiy render funksiyasi
-          function renderProductDetail() {
-            if (!fetchedData) return;
+                        // Asosiy render funksiyasi
+                        function renderProductDetail() {
+                            if (!fetchedData) return;
 
-            const container = document.getElementById("product-detail");
-            const product = Array.isArray(fetchedData.product)
-              ? fetchedData.product[0]
-              : fetchedData.product;
-            const productImages = fetchedData.product_images || [];
+                            const container = document.getElementById("product-detail");
+                            const product = Array.isArray(fetchedData.product) ?
+                                fetchedData.product[0] :
+                                fetchedData.product;
+                            const productImages = fetchedData.product_images || [];
 
-            const images = productImages
-              .map(
-                (img, idx) => `
+                            const images = productImages
+                                .map(
+                                    (img, idx) => `
             <div 
               x-show="image === ${idx + 1}" 
               class="w-full h-64 md:h-[300px] md:w-[410px] lg:h-[420px] lg:w-[700px] bg-gray-100 rounded-lg flex items-center justify-center z-0 relative"
@@ -250,10 +165,10 @@
               }" class="max-h-full object-contain" alt="image-${idx + 1}">
             </div>
         `
-              )
-              .join("");
+                                )
+                                .join("");
 
-            const thumbnails = `
+                            const thumbnails = `
             <div class="flex flex-wrap justify-center gap-2 mt-4 md:mt-6 lg:mt-6 relative z-10">
               ${productImages
                 .map(
@@ -374,20 +289,17 @@
               });
           }
         });
-      </script>
+        </script>
     </main>
 
     <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i
     ></a>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/detail.js"></script>
-  </body>
+</body>
+
 </html>
