@@ -238,7 +238,7 @@ let currentLang = localStorage.getItem("lang") || "uz";
 let fetchedData = null;
 
 // === API orqali ma’lumotlarni olish ===
-fetch("https://alveron.onrender.com/home/")
+fetch("https://alveron-production.up.railway.app/home/")
   .then((res) => res.json())
   .then((data) => {
     fetchedData = data;

@@ -238,7 +238,7 @@ let currentLang = localStorage.getItem("lang") || "uz";
 let fetchedData = null;
 
 // === API orqali ma’lumotlarni olish ===
-fetch("https://alveron.onrender.com//home/")
+fetch("https://alveron-production.up.railway.app//home/")
   .then((res) => res.json())
   .then((data) => {
     fetchedData = data;
@@ -397,7 +397,7 @@ document.addEventListener("click", (e) => {
 });
 
 /////our_parents///
-fetch("https://alveron.onrender.com/home/")
+fetch("https://alveron-production.up.railway.app/home/")
   .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("partners-container");
@@ -420,126 +420,126 @@ fetch("https://alveron.onrender.com/home/")
   .catch((error) => console.error("Fetch error:", error));
 /////our_parents///
 
-/////// LOCAL SECTION ///////
-const params = new URLSearchParams(window.location.search);
-let id = params.get("id");
-if (id && id.endsWith("/")) id = id.slice(0, -1);
+// /////// LOCAL SECTION ///////
+// const params = new URLSearchParams(window.location.search);
+// let id = params.get("id");
+// if (id && id.endsWith("/")) id = id.slice(0, -1);
 
-// 🔹 Brauzer tilini emas, localStorage tilini ishlatamiz
-// let currentLang = localStorage.getItem("lang") || "uz";
-function getLocalizedValue(obj, baseKey) {
-  return obj[`${baseKey}_${currentLang}`] || obj[baseKey] || "";
-}
+// // 🔹 Brauzer tilini emas, localStorage tilini ishlatamiz
+// // let currentLang = localStorage.getItem("lang") || "uz";
+// function getLocalizedValue(obj, baseKey) {
+//     return obj[`${baseKey}_${currentLang}`] || obj[baseKey] || "";
+// }
 
-// 🔹 Localized qiymat olish uchun funksiya
-function getLocalizedValue(obj, baseKey) {
-  return obj[`${baseKey}_${currentLang}`] || obj[baseKey] || "";
-}
+// // 🔹 Localized qiymat olish uchun funksiya
+// function getLocalizedValue(obj, baseKey) {
+//     return obj[`${baseKey}_${currentLang}`] || obj[baseKey] || "";
+// }
 
-if (id) {
-  fetch(`https://alveron.onrender.com/local/${id}/`)
-    .then((res) => res.json())
-    .then((data) => {
-      // Global image
-      const globalImageContainer = document.getElementById(
-        "global-image-container"
-      );
-      if (data.global_image && data.global_image.image) {
-        globalImageContainer.innerHTML = `
-                    <img src="${data.global_image.image}" 
-                         alt="Global Image" 
-                         class="img-fluid rounded shadow w-full" 
-                         style="max-height:350px; object-fit:cover;">
-                `;
-      } else {
-        globalImageContainer.innerHTML = `
-                    <img src="https://via.placeholder.com/800x300?text=No+Global+Image" 
-                         alt="No Global Image" 
-                         class="img-fluid rounded shadow" 
-                         style="max-height:300px; object-fit:cover;">
-                `;
-      }
+// if (id) {
+//     fetch(`https://alveron-production.up.railway.app/local/${id}/`)
+//         .then((res) => res.json())
+//         .then((data) => {
+//             // Global image
+//             const globalImageContainer = document.getElementById(
+//                 "global-image-container"
+//             );
+//             if (data.global_image && data.global_image.image) {
+//                 globalImageContainer.innerHTML = `
+//                     <img src="${data.global_image.image}"
+//                          alt="Global Image"
+//                          class="img-fluid rounded shadow w-full"
+//                          style="max-height:350px; object-fit:cover;">
+//                 `;
+//             } else {
+//                 globalImageContainer.innerHTML = `
+//                     <img src="https://via.placeholder.com/800x300?text=No+Global+Image"
+//                          alt="No Global Image"
+//                          class="img-fluid rounded shadow"
+//                          style="max-height:300px; object-fit:cover;">
+//                 `;
+//             }
 
-      const container = document.getElementById("project-cards");
-      if (!data.local_categorys || data.local_categorys.length === 0) {
-        container.innerHTML =
-          "<p class='text-center text-muted'>Hech qanday ma'lumot topilmadi.</p>";
-        return;
-      }
+//             const container = document.getElementById("project-cards");
+//             if (!data.local_categorys || data.local_categorys.length === 0) {
+//                 container.innerHTML =
+//                     "<p class='text-center text-muted'>Hech qanday ma'lumot topilmadi.</p>";
+//                 return;
+//             }
 
-      data.local_categorys.forEach((item, index) => {
-        const card = document.createElement("div");
-        card.className =
-          "card overflow-hidden rounded-4 border-0 mb-5 bg-stone-800 shadow-xl shadow-stone-800 hover:bg-yellow-600 hover:shadow-yellow-600";
-        card.setAttribute("data-aos", "fade-left");
-        card.setAttribute("data-aos-delay", index * 200);
+//             data.local_categorys.forEach((item, index) => {
+//                 const card = document.createElement("div");
+//                 card.className =
+//                     "card overflow-hidden rounded-4 border-0 mb-5 bg-stone-800 shadow-xl shadow-stone-800 hover:bg-yellow-600 hover:shadow-yellow-600";
+//                 card.setAttribute("data-aos", "fade-left");
+//                 card.setAttribute("data-aos-delay", index * 200);
 
-        // Hamma maydonlarni tilga moslashtirish
-        const localizedItem = {};
-        for (const key in item) {
-          if (/_uz$|_ru$|_en$/i.test(key)) {
-            const baseKey = key.replace(/_(uz|ru|en)$/i, "");
-            localizedItem[baseKey] = getLocalizedValue(item, baseKey);
-          } else {
-            localizedItem[key] = item[key];
-          }
-        }
+//                 // Hamma maydonlarni tilga moslashtirish
+//                 const localizedItem = {};
+//                 for (const key in item) {
+//                     if (/_uz$|_ru$|_en$/i.test(key)) {
+//                         const baseKey = key.replace(/_(uz|ru|en)$/i, "");
+//                         localizedItem[baseKey] = getLocalizedValue(item, baseKey);
+//                     } else {
+//                         localizedItem[key] = item[key];
+//                     }
+//                 }
 
-        card.innerHTML = `
-                    <a href="detail.html?id=${
-                      localizedItem.product_id
-                    }" class="btn mt-2">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center flex-column flex-md-row">
-                                <div class="p-5 flex-fill">
-                                    <h3 class="text-white text-2xl font-bold">${
-                                      localizedItem.name
-                                    }</h3>
-                                    <p class="text-white">${
-                                      localizedItem.description || ""
-                                    }</p>
-                                </div>
-                                <img class="img-fluid" 
-                                     src="${
-                                       localizedItem.images ||
-                                       "https://via.placeholder.com/300x400?text=No+Image"
-                                     }" 
-                                     alt="${localizedItem.name}" 
-                                     style="max-width:300px; object-fit:cover;">
-                            </div>
-                        </div>
-                    </a>
-                `;
-        container.appendChild(card);
-      });
-    })
-    .catch((err) => {
-      console.error("❌ Xatolik:", err);
-      document.getElementById("project-cards").innerHTML =
-        "<p class='text-danger text-center'>Ma'lumotlarni olishda xatolik yuz berdi.</p>";
-    });
-}
+//                 card.innerHTML = `
+//                     <a href="detail.html?id=${
+//                       localizedItem.product_id
+//                     }" class="btn mt-2">
+//                         <div class="card-body p-0">
+//                             <div class="d-flex align-items-center flex-column flex-md-row">
+//                                 <div class="p-5 flex-fill">
+//                                     <h3 class="text-white text-2xl font-bold">${
+//                                       localizedItem.name
+//                                     }</h3>
+//                                     <p class="text-white">${
+//                                       localizedItem.description || ""
+//                                     }</p>
+//                                 </div>
+//                                 <img class="img-fluid"
+//                                      src="${
+//                                        localizedItem.images ||
+//                                        "https://via.placeholder.com/300x400?text=No+Image"
+//                                      }"
+//                                      alt="${localizedItem.name}"
+//                                      style="max-width:300px; object-fit:cover;">
+//                             </div>
+//                         </div>
+//                     </a>
+//                 `;
+//                 container.appendChild(card);
+//             });
+//         })
+//         .catch((err) => {
+//             console.error("❌ Xatolik:", err);
+//             document.getElementById("project-cards").innerHTML =
+//                 "<p class='text-danger text-center'>Ma'lumotlarni olishda xatolik yuz berdi.</p>";
+//         });
+// }
 
-///////MUROJAT QILISH /////
+// ///////MUROJAT QILISH /////
 
-function getCookie(name) {
-  let cookieValue = null;
-  if (document.cookie && document.cookie !== "") {
-    const cookies = document.cookie.split(";");
-    for (let cookie of cookies) {
-      cookie = cookie.trim();
-      if (cookie.startsWith(name + "=")) {
-        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-        break;
-      }
-    }
-  }
-  return cookieValue;
-}
+// function getCookie(name) {
+//     let cookieValue = null;
+//     if (document.cookie && document.cookie !== "") {
+//         const cookies = document.cookie.split(";");
+//         for (let cookie of cookies) {
+//             cookie = cookie.trim();
+//             if (cookie.startsWith(name + "=")) {
+//                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+//                 break;
+//             }
+//         }
+//     }
+//     return cookieValue;
+// }
 
 // CSRF Cookie olish uchun home endpointga request
 window.addEventListener("DOMContentLoaded", async () => {
-  await fetch("https://alveron.onrender.com/home/", {
+  await fetch("https://alveron-production.up.railway.app/home/", {
     credentials: "include",
   });
 });

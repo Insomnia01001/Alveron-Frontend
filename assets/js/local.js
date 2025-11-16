@@ -238,7 +238,7 @@ let currentLang = localStorage.getItem("lang") || "uz";
 let fetchedData = null;
 
 // === API orqali ma’lumotlarni olish ===
-fetch("https://alveron.onrender.com/home/")
+fetch("https://alveron-production.up.railway.app/home/")
   .then((res) => res.json())
   .then((data) => {
     fetchedData = data;
@@ -412,7 +412,7 @@ function getLocalizedValue(obj, baseKey) {
 }
 
 if (id) {
-  fetch(`https://alveron.onrender.com/local/${id}/`)
+  fetch(`https://alveron-production.up.railway.app/local/${id}/`)
     .then((res) => res.json())
     .then((data) => {
       // Global image
